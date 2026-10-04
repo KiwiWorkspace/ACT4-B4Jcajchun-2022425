@@ -1,0 +1,29 @@
+{
+  "name": "act4-b4jcajchun-2022425",
+  "version": "1.0.0",
+  "description": "Mini tienda web con fetch a una API publica, ESLint y Husky",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx --yes serve -l 8080 .",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "prepare": "husky"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KiwiWorkspace/ACT4-B4Jcajchun-2022425.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/KiwiWorkspace/ACT4-B4Jcajchun-2022425/issues"
+  },
+  "homepage": "https://github.com/KiwiWorkspace/ACT4-B4Jcajchun-2022425#readme",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.12.0",
+    "husky": "^9.1.7"
+  }
+}

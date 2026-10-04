@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini Tienda - Catalogo de productos</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1>Mini Tienda</h1>
+      <p class="subtitle">Catalogo de productos obtenido desde una API publica</p>
+    </header>
+
+    <main>
+      <section class="controls" aria-label="Controles del catalogo">
+        <label class="field">
+          <span>Buscar</span>
+          <input
+            type="search"
+            id="search"
+            placeholder="Buscar por nombre, marca o categoria..."
+            autocomplete="off"
+          />
+        </label>
+
+        <label class="field">
+          <span>Categoria</span>
+          <select id="category">
+            <option value="all">Todas</option>
+          </select>
+        </label>
+
+        <button type="button" id="reload">Recargar datos</button>
+      </section>
+
+      <p id="status" class="status" role="status" aria-live="polite">Cargando productos...</p>
+
+      <section id="products" class="grid" aria-label="Listado de productos"></section>
+
+      <template id="product-template">
+        <article class="card">
+          <img class="card__img" alt="" />
+          <div class="card__body">
+            <h2 class="card__title"></h2>
+            <p class="card__brand"></p>
+            <p class="card__price"></p>
+            <p class="card__rating"></p>
+            <button type="button" class="card__add">Agregar al carrito</button>
+            <span class="card__count" hidden></span>
+          </div>
+        </article>
+      </template>
+    </main>
+
+    <footer class="footer">
+      <p>
+        Proyecto practico - GIT + Husky + ESLint.
+        Datos de <a href="https://dummyjson.com" target="_blank" rel="noreferrer">DummyJSON</a>.
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
